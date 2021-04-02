@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+
+* {
+    margin: 0;
+    border:0;
+}
+
+.ProfilePic img {
+    margin-left: 5vw;
+    margin-top: 80px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.ProfileInfo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.ProfileInfo #name {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+}
+
+.ProfileInfo .RoleAndCompany {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2vh;
+    margin: 20px;
+}
+
+.SideLinks {
+    margin: 25px;
+}
+
+.SideLinks ul li {
+    list-style-type: none;
+}
