@@ -36,3 +36,7 @@
 .SideLinks ul li {
     list-style-type: none;
 }
+
+.ExternalLink {
+    padding: 5px;
+}

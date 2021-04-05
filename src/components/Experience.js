@@ -1,9 +1,6 @@
 import React from 'react'
 import "../css/Experience.css"
 
-import Yardi from "../img/yardi.jpg"
-import DS from "../img/3ds.jpg"
-
 export default function Experience() {
     return (
         <>
@@ -11,25 +8,16 @@ export default function Experience() {
                 Experience
             </div>
             <div className="ExperieneMain">
-
-                {/* <div className="CompanyLogo">
-                        <img src={DS} alt="3DS logo" />
-                    </div> */}
-                <div id="Experience_Yardi" className="Experience">
-                    <br />
-                    <label className="OrgName">Organization - Dassault Systèmes</label>
-                    <label className="Tenure">Apr 2021 - Current</label>
-                    <label className="Designation">R&D Development Engineer</label>
+                <div id="Experience_3DS" className="Experience">
+                    <label className="OrgName">R&D Development Engineer @ Dassault Systèmes</label>
+                    <p>Yet to come</p>
                 </div>
-
-                {/* <div className="CompanyLogo">
-                    <img src={Yardi} alt="Yardi logo" />
-                </div> */}
+                <br />            
                 <div id="Experience_Yardi" className="Experience">
-                    <br />
-                    <label className="OrgName">Yardi Software India Pvt. Ltd.</label>
-                    <label className="Tenure">Aug 2019 - Apr 2021</label>
-                    <label className="Designation">Software Analyst</label>
+                    <label className="OrgName">Software Analyst @ Yardi Software India Pvt. Ltd.</label>
+                    <p>
+                        Worked as Full-Stack developer where I created frameworks, bug fixing, enhancements and adding new features using JavaScript frameworks namely Node.js and React.js for frontend, middleware and MS SQL Server as backend tech.
+                    </p>
                 </div>
             </div>
         </>

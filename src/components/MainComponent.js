@@ -12,17 +12,24 @@ import Projects from "./Project"
 import { Navbar } from 'react-bootstrap'
 import { Nav } from 'react-bootstrap'
 
+import "../css/Common.css"
+
 export default function MainComponent() {
+    
+    const LinkStyle = {
+        textDecoration: 'none'
+    }
+
     return (
         <>
             <BrowserRouter>
 
-            <Navbar bg="light">
-                <Nav.Link><NavLink to="/" activeClassName="active" style={{ textDecoration: 'none' }}>About</NavLink></Nav.Link>
-                <Nav.Link><NavLink to="/experience" activeClassName="active" style={{ textDecoration: 'none' }}>Experience</NavLink></Nav.Link>
-                <Nav.Link><NavLink to="/skills" activeClassName="active" style={{ textDecoration: 'none' }}>Skills</NavLink></Nav.Link>
-                <Nav.Link><NavLink to="/projects" activeClassName="active" style={{ textDecoration: 'none' }}>Projects</NavLink></Nav.Link>
-                <Nav.Link><NavLink to="/contact" activeClassName="active" style={{ textDecoration: 'none' }}>Contact Me</NavLink></Nav.Link>
+            <Navbar bg="light" className=".ExternalLinks">
+                <Nav.Link><NavLink to="/" activeClassName="active" style={LinkStyle }>About</NavLink></Nav.Link>
+                <Nav.Link><NavLink to="/experience" activeClassName="active" style={ LinkStyle }>Experience</NavLink></Nav.Link>
+                <Nav.Link><NavLink to="/skills" activeClassName="active" style={LinkStyle}>Skills</NavLink></Nav.Link>
+                <Nav.Link><NavLink to="/projects" activeClassName="active" style={LinkStyle}>Projects</NavLink></Nav.Link>
+                <Nav.Link><NavLink to="/contact" activeClassName="active" style={LinkStyle}>Contact Me</NavLink></Nav.Link>
             </Navbar>
             
             <Switch>

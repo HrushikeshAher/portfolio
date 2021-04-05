@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Varela+Round&display=swap');
+
+* {
+    margin: o;
+    padding: 0;
+}
+
+.CommonText {
+    margin-bottom: 40px;
+}
+.ProjectsMain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Project {
+    width: 30%;
+    border: 3px solid #f2f2f2;
+    font-family: 'Roboto', sans-serif;
+    padding: 10px;
+}
+
+.Project h5 {
+    font-family: 'Montserrat', sans-serif;
+}

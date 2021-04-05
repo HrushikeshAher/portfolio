@@ -39,25 +39,25 @@ function Interests() {
     )
 }
 
-function Aspirations() {
-    return(
-        <>
-        <div className="CommonText">
-            <h3>Aspirations</h3>
-            <p>
+// function Aspirations() {
+//     return(
+//         <>
+//         <div className="CommonText">
+//             <h3>Aspirations</h3>
+//             <p>
 
-            </p>
-        </div>
-        </>
-    )
-}
+//             </p>
+//         </div>
+//         </>
+//     )
+// }
 
 function IAm() {
     return(
         <>
         <div className="CommonText">
             <h3>I'm a </h3>
-            <h4>Software Developer, Full-Stack Engineer, Freelancer, Machine Learning Enthutiast</h4>
+            <h4>Software Developer, Full-Stack Engineer, Freelancer, Machine Learning Enthustiast</h4>
         </div>
         </>
     )
