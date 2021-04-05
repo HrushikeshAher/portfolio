@@ -7,20 +7,10 @@
 
 .main {
   display: flex;
-  align-items: center;
 }
 
 .ShortProfile {
-  width: 25vw;
+  /* width: 25vw; */
   height: 100vh;
   background-color: #f2f2f2;
-}
-
-.BriefProfile {
-  width: 75vw;
-  height: 100vh;
-}
-
-.MainDiv {
-  margin: 75px 40px;
 }

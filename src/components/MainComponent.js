@@ -27,13 +27,14 @@ export default function MainComponent() {
             
             <Switch>
                 <div className="MainComponentContent">
-                    <Route exact path = '/' component={About} />
-                    <Route path = '/experience' component={Experience} />
+                    <Route exact path = '/'> <About /> </Route>
+                    <Route path = '/experience'> <Experience /> </Route>
                     <Route path="/skills"><Skills/></Route>
                     <Route path="/contact"><Contact /></Route>
                     <Route path="/projects"><Projects /></Route>
                 </div>
             </Switch>
+            
             </BrowserRouter>
         </>
     )
