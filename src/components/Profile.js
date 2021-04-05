@@ -41,7 +41,7 @@ function ExternalLinks() {
             <div className = "ExternalLinks">
                 <ExternalLink className="ExternalLink" href="https://www.linkedin.com/in/mritunjay-tomar/" ><span className="fa fa-linkedin"></span></ExternalLink>
                 <ExternalLink className="ExternalLink" href="https://github.com/mritunjay-tomar/" ><span className="fa fa-github"></span></ExternalLink>           
-                <ExternalLink className="ExternalLink" href="https://github.com/mritunjay-tomar/" ><span className="fa fa-twitter"></span></ExternalLink>           
+                {/* <ExternalLink className="ExternalLink" href="https://github.com/mritunjay-tomar/" ><span className="fa fa-twitter"></span></ExternalLink>            */}
             </div>
         </>
     )

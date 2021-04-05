@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,500;1,300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Varela+Round&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +16,8 @@
 }
 
 .CommonText {
-    font-family: 'Work Sans', sans-serif;
-    color: black;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
     margin-left: 20px;
 }
 
