@@ -37,26 +37,32 @@ function ProfileInfo() {
 }
 
 function ExternalLinks() {
+    const IconStyle ={
+        color: 'black'
+    }
     return (
         <>
             <div className = "ExternalLinks">
                 <ExternalLink 
                     className="ExternalLink" 
+                    style={IconStyle}
                     href="https://www.linkedin.com/in/mritunjay-tomar/">
                         <span className="fa fa-linkedin" title="Linkedin"></span>
                 </ExternalLink>
                 <ExternalLink 
                     className="ExternalLink" 
+                    style={IconStyle}
                     href="https://github.com/mritunjay-tomar/" >
                         <span className="fa fa-github" title = "Github"></span>
                 </ExternalLink>
                 <ExternalLink 
                     className="ExternalLink" 
+                    style={IconStyle}
                     href="https://twitter.com/MritunjayT8" >
                         <span className="fa fa-twitter" title = "Twitter"></span>
                 </ExternalLink>
                 <ExternalLink 
-                    className="ExternalLink" 
+                    className="ExternalLink"
                     href="https://mritunjay-tomar.github.io/resume/Mritunjay's%20Resume.pdf" >
                         <img src={ ResumeIcon } alt="Resume" />
                 </ExternalLink>

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import "../css/Common.css"
+import "../css/About.css"
 
 export default function About() {
     return (
@@ -18,39 +19,37 @@ function Summary() {
         <div className="Summary CommonText">
             <h3>About</h3>
             <p>
-                Having assets like forward thinking, loyalty, honesty and sincerity, I always wish to contribute towards for the success of an organization.
-                A Full Stack Developer who specializes in JavaScript technologies across the stack - React.js, Node.js, Express.js. Experience in building complete web applications with backend API Systems. 
+                I am a driven individual with the ability to adapt to any situation and proven potantial to grow self and others. Having assets like forward thinking, loyalty, honesty and sincerity, I always wish to contribute towards for the success of an organization.
+                A Full Stack Developer who specializes in JavaScript technologies across the stack - React.js, Node.js, Express.js. Experience in building complete web applications with backend API Systems. Experienced designing and developing software for business solutions
             </p>
         </div>
     )
 }
 
 function Interests() {
+    const Interests = [
+        "Software Development",
+        "Machine Learning",
+        "Full-Stack Development",
+        "Algorithms",
+        "Data Structures"
+    ]
+
     return (
-        <div className="Interests CommonText">
-            <h3>Interests</h3>
-            <ul>
-                <li>Software Development</li>
-                <li>Machine Learning</li>
-                <li>Games</li>
-                <li>Travelling</li>
-            </ul>
-        </div>
+        <>
+            <div className="InterestHeading">
+                <h3>Interests</h3>
+            </div>
+            <div className="Interests CommonText">
+                {
+                    Interests.map(function(Interest) {
+                        return <div className="Interest">{Interest}</div>
+                    })
+                }
+            </div>
+        </>
     )
 }
-
-// function Aspirations() {
-//     return(
-//         <>
-//         <div className="CommonText">
-//             <h3>Aspirations</h3>
-//             <p>
-
-//             </p>
-//         </div>
-//         </>
-//     )
-// }
 
 function IAm() {
     return(

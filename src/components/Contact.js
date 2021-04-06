@@ -1,23 +1,32 @@
 import React from 'react'
-import { ExternalLink } from "react-external-link"
+// import { ExternalLink } from "react-external-link"
 
 import "font-awesome/css/font-awesome.min.css"
 import "../css/Common.css"
+import "../css/Contact.css"
 
 export default function Contact() {
-
-    const ContactStyle = {
-        display:'flex', 
-        flexDirection: 'column'
-    }
-
     return (
         <>
-            <h3 className="CommonText">Contact Me</h3>
-            <div style={ContactStyle}>
-                <label id="email"><span className="fa fa-at"></span> mritunjai88@gmail.com</label>
-                <label id="PhoneNumber"><span className="fa fa-whatsapp"></span> +91 - 7387391018</label>
-                <ExternalLink className="ExternalLink" href="https://www.linkedin.com/in/mritunjay-tomar/"><span className="fa fa-linkedin"></span> Linked-in</ExternalLink>
+            <div className="CommonText">
+                <h3>Contact Me</h3>
+            </div>
+            <div className="EmailForm CommonText">
+                <table>
+                <tr>
+                    <td><label>Name</label></td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td><label>Your E-mail</label></td>
+                    <td><input type="text" /></td>
+                </tr>
+                <tr>
+                    <td><label>Body</label></td>
+                    <td><textarea rows="5" cols="50"></textarea></td>
+                </tr>
+                <tr><button type="submit">Submit</button></tr>
+                </table>
             </div>
         </>
     )
