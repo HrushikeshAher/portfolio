@@ -10,7 +10,7 @@ export default function App() {
         <Profile />
       </div>
 
-      <div className="col-md-9">
+      <div className="col-md-9 DetailsProfile">
           <MainComponent />
       </div>
     </div>

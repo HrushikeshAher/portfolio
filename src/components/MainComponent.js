@@ -23,14 +23,16 @@ export default function MainComponent() {
     return (
         <>
             <BrowserRouter>
-
-            <Navbar bg="light" className=".ExternalLinks">
-                <Nav.Link><NavLink to="/" activeClassName="active" style={LinkStyle }>About</NavLink></Nav.Link>
-                <Nav.Link><NavLink to="/experience" activeClassName="active" style={ LinkStyle }>Experience</NavLink></Nav.Link>
-                <Nav.Link><NavLink to="/skills" activeClassName="active" style={LinkStyle}>Skills</NavLink></Nav.Link>
-                <Nav.Link><NavLink to="/projects" activeClassName="active" style={LinkStyle}>Projects</NavLink></Nav.Link>
-                <Nav.Link><NavLink to="/contact" activeClassName="active" style={LinkStyle}>Contact Me</NavLink></Nav.Link>
-            </Navbar>
+            
+            <div className="NavBar">
+                <Navbar bg="light" className=".ExternalLinks">
+                    <Nav.Link><NavLink to="/" exact activeClassName="activeClass" style={LinkStyle }>About</NavLink></Nav.Link>
+                    <Nav.Link><NavLink to="/experience" activeClassName="activeClass" style={ LinkStyle }>Experience</NavLink></Nav.Link>
+                    <Nav.Link><NavLink to="/skills" activeClassName="activeClass" style={LinkStyle}>Skills</NavLink></Nav.Link>
+                    <Nav.Link><NavLink to="/projects" activeClassName="activeClass" style={LinkStyle}>Projects</NavLink></Nav.Link>
+                    <Nav.Link><NavLink to="/contact" activeClassName="activeClass" style={LinkStyle}>Contact Me</NavLink></Nav.Link>
+                </Navbar>
+            </div>
             
             <Switch>
                 <div className="MainComponentContent">
