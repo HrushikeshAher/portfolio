@@ -60,10 +60,8 @@ a:active {
 }
 
 .activeClass {
-    border-radius: 5px;
-    background-color: #0e76a8;
-    color: white;
-    padding : 10px;
+    padding: 5px;
+    border-bottom: 2px solid #888888;
 }
 
 .NavBar {

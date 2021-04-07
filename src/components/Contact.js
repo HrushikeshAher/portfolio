@@ -34,15 +34,28 @@ export default function Contact() {
     }
 
     const onClickSubmitHandler = (e) => {
+        
         e.preventDefault();
+        
+        if (name.trim() === "") {
+            Toast(false, "Error occurred in sending E-mail.")
+            return
+        } else if (email.trim === "") {
+            Toast(false, "Error occurred in sending E-mail.")
+            return
+        } else if (body.trim === "") {
+            Toast(false, "Error occurred in sending E-mail.")
+            return
+        }
+
         emailjs.sendForm("service_y2kz80g","template_wvc1whu", e.target)
         .then((result) => {
             console.log(result.text);
-            Toast(true);
-            e.target.reset();
+            Toast(true, "E-mail sent successfully.");
+            onClickClearHandler();
         }, (error) => {
             console.log(error.text);
-            Toast(false)
+            Toast(false, "Error occurred in sending E-mail.")
         });
     }
 
@@ -52,16 +65,14 @@ export default function Contact() {
         setBody("");
     }
 
-    const Toast = (Successfull) => {
+    const Toast = (Successfull, message) => {
         if (Successfull) {
-            toast.success("E-mail sent successfully", { 
-                position: toast.POSITION.BOTTOM_RIGHT,
-                autoClose: false
+            toast.success(message, { 
+                position: toast.POSITION.BOTTOM_RIGHT
             });
         } else {
-            toast.error("Error occurred in sending E-mail, Please contact me through some other means", { 
-                position: toast.POSITION.BOTTOM_RIGHT,
-                autoClose: false
+            toast.error(message, { 
+                position: toast.POSITION.BOTTOM_RIGHT
             });
         }
     }
