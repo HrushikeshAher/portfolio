@@ -38,13 +38,10 @@ export default function Contact() {
         e.preventDefault();
         
         if (name.trim() === "") {
-            Toast(false, "Error occurred in sending E-mail.")
-            return
-        } else if (email.trim === "") {
-            Toast(false, "Error occurred in sending E-mail.")
+            Toast(false, "Please enter your E-mail")
             return
         } else if (body.trim === "") {
-            Toast(false, "Error occurred in sending E-mail.")
+            Toast(false, "Please enter message body.")
             return
         }
 
@@ -55,7 +52,7 @@ export default function Contact() {
             onClickClearHandler();
         }, (error) => {
             console.log(error.text);
-            Toast(false, "Error occurred in sending E-mail.")
+            Toast(false, "Error occurred in sending E-mail. Please try again later")
         });
     }
 
@@ -97,7 +94,7 @@ export default function Contact() {
                     <td><textarea rows="5" cols="50" name="body" value={body} onChange={onChangeBody}></textarea></td>
                 </tr>
                 <tr>
-                    <td><Button type="submit" >Submit</Button></td>
+                    <td><Button type="submit" >Send</Button></td>
                     <td><Button variant="secondary" onClick={onClickClearHandler}>Clear</Button></td>
                 </tr>
                 </table>

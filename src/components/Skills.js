@@ -4,30 +4,87 @@ import "../css/Common.css"
 import "../css/Skills.css"
 
 export default function Skills() {
+    
+    const ProgrammingLanguages = [
+        "JavaScript",
+        "Python",
+        "VB.NET",
+    ]
+
+    const Frameworks = [
+        "React JS",
+        "Node JS",
+        "Express JS",
+        "Python-Django"
+    ]
+
+    const IndustryKnowledge = [
+        "Algorithms",
+        "Data Structures",
+        "Object-Oriented Programming",
+        "Web Development",
+        "Debugging",
+        "Designing REST API's"
+    ]
+
+    const DataBases = [
+        "MS SQL Server",
+        "MySQL",
+        "MongoDB",
+    ]
+
     return (
         <>
-            <div className="CommonText">
-                <h3>Programming Languages</h3>
-                <div className="skill">JavaScript</div>
-                <div className="skill">HTML5</div>
-                <div className="skill">CSS</div>
-                <div className="skill">Python</div>
+            <div id="ProgrammingLanguages" className="CommonText">
+            <h3>Programming Languages</h3>
+                {
+                    ProgrammingLanguages.map( Language => {
+                        return (
+                            <>
+                                <div className="skill">{Language}</div>
+                            </>
+                        )
+                    } )
+                }
             </div>
 
-            <div className="CommonText">
+            <div id="Frameworks" className="CommonText">
                 <h3>Frameworks</h3>
-                <div className="skill">React JS</div>
-                <div className="skill">Node JS</div>
-                <div className="skill">Express JS</div>
-                <div className="skill">Python-Django</div>
+                {
+                    Frameworks.map( Framework => {
+                        return (
+                            <>
+                                <div className="skill">{Framework}</div>
+                            </>
+                        )
+                    } )
+                }
             </div>
 
-            <div className="CommonText">
-                <h3>Industry Knowledge</h3>
-                <div className="skill">Algorithms</div>
-                <div className="skill">Data Structures</div>
-                <div className="skill">Object-Oriented Programming</div>
-                <div className="skill">Debugging</div>
+            <div id="IndustryKnowledge" className="CommonText">
+            <h3>Industry Knowledge</h3>
+                {
+                    IndustryKnowledge.map( Knowledge => {
+                        return (
+                            <>
+                                <div className="skill">{Knowledge}</div>
+                            </>
+                        )
+                    } )
+                }
+            </div>
+
+            <div id="Databases" className="CommonText">
+            <h3>Databases</h3>
+                {
+                    DataBases.map( DB => {
+                        return (
+                            <>
+                                <div className="skill">{DB}</div>
+                            </>
+                        )
+                    } )
+                }
             </div>
         </>
     )
