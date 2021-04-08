@@ -9,7 +9,6 @@ export default function About() {
             <IAm />
             <Summary />
             <Interests />
-            {/* <Aspirations /> */}
         </div>
     )
 }
@@ -20,7 +19,6 @@ function Summary() {
             <h3>About</h3>
             <p>
                 I am a driven individual with the ability to adapt to any situation and proven potantial to grow self and others. Having assets like forward thinking, loyalty, honesty and sincerity, I always wish to contribute towards for the success of an organization.
-                A Full Stack Developer who specializes in JavaScript technologies across the stack - React.js, Node.js, Express.js. Experience in building complete web applications with backend API Systems. Experienced designing and developing software for business solutions
             </p>
         </div>
     )

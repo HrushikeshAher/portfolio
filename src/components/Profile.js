@@ -42,7 +42,7 @@ function ExternalLinks() {
     }
     return (
         <>
-            <div className = "ExternalLinks">
+            <div className = "ExternalLinks container">
                 <ExternalLink 
                     className="ExternalLink" 
                     style={IconStyle}

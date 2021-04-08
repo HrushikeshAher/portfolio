@@ -33,10 +33,14 @@ export default function Skills() {
         "MongoDB",
     ]
 
+    const HeadingStyle = {
+        marginLeft: "20px"
+    }
+
     return (
         <>
-            <div id="ProgrammingLanguages" className="CommonText">
-            <h3>Programming Languages</h3>
+            <div id="ProgrammingLanguages">
+            <h3 style={HeadingStyle}>Programming Languages</h3>
                 {
                     ProgrammingLanguages.map( Language => {
                         return (
@@ -48,8 +52,8 @@ export default function Skills() {
                 }
             </div>
 
-            <div id="Frameworks" className="CommonText">
-                <h3>Frameworks</h3>
+            <div id="Frameworks">
+                <h3 style={HeadingStyle}>Frameworks</h3>
                 {
                     Frameworks.map( Framework => {
                         return (
@@ -61,8 +65,8 @@ export default function Skills() {
                 }
             </div>
 
-            <div id="IndustryKnowledge" className="CommonText">
-            <h3>Industry Knowledge</h3>
+            <div id="IndustryKnowledge">
+            <h3 style={HeadingStyle}>Industry Knowledge</h3>
                 {
                     IndustryKnowledge.map( Knowledge => {
                         return (
@@ -74,8 +78,8 @@ export default function Skills() {
                 }
             </div>
 
-            <div id="Databases" className="CommonText">
-            <h3>Databases</h3>
+            <div id="Databases">
+            <h3 style={HeadingStyle}>Databases</h3>
                 {
                     DataBases.map( DB => {
                         return (

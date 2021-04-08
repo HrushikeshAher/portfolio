@@ -83,15 +83,15 @@ export default function Contact() {
                 <table>
                 <tr>
                     <td><label>Name</label></td>
-                    <td><input type="text" size="50" name="name" value={name} onChange={onChangeName} /></td>
+                    <td><input type="text" name="name" value={name} onChange={onChangeName} /></td>
                 </tr>
                 <tr>
                     <td><label>Your E-mail</label></td>
-                    <td><input type="email" size="50" name="email" value={email} onChange={onChangeEmail} /></td>
+                    <td><input type="email" name="email" value={email} onChange={onChangeEmail} /></td>
                 </tr>
                 <tr>
                     <td><label>Body</label></td>
-                    <td><textarea rows="5" cols="50" name="body" value={body} onChange={onChangeBody}></textarea></td>
+                    <td><textarea rows="5" name="body" value={body} onChange={onChangeBody}></textarea></td>
                 </tr>
                 <tr>
                     <td><Button type="submit" >Send</Button></td>
