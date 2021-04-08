@@ -16,7 +16,6 @@
 }
 
 .Project {
-    width: 30%;
     border: 2px solid #f2f2f2;
     font-family: 'Roboto', sans-serif;
     padding: 10px;
@@ -24,4 +23,10 @@
 
 .Project h5 {
     font-family: 'Montserrat', sans-serif;
+}
+
+@media (min-width: 992px) {
+.Project {
+    width: 30%;
+}
 }

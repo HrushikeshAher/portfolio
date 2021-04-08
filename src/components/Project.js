@@ -31,7 +31,7 @@ export default function Projects() {
                 <h3>Projects</h3>
             </div>
 
-            <div className="ProjectsMain">
+            <div className="ProjectsMain Container">
                 {
                     Projects.map( Project => {
                         return (

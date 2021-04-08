@@ -19,7 +19,7 @@ export default function Experience() {
             <div className="Heading">
                 <h3>Experience</h3>
             </div>
-            <div className="ExperieneMain">
+            <div className="ExperieneMain Container">
                 {
                     AllExperience.map( Experience => {
                         return (
