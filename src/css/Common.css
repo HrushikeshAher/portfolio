@@ -65,5 +65,14 @@ a:active {
 }
 
 .NavBar {
-    box-shadow: 0px 0px 5px #888888;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.2);
+}
+
+/* mobile devices */
+@media (max-width: 768px) {
+    .CommonText {
+        display: block;
+    }
 }
