@@ -33,6 +33,11 @@ export default function Skills() {
         "MongoDB",
     ]
 
+    const HeadingStyleTop = {
+        marginTop: "50px",
+        marginLeft: "20px"
+    }
+
     const HeadingStyle = {
         marginLeft: "20px"
     }
@@ -40,16 +45,16 @@ export default function Skills() {
     return (
         <>
             <div id="ProgrammingLanguages">
-            <h3 style={HeadingStyle}>Programming Languages</h3>
-                {
-                    ProgrammingLanguages.map( Language => {
-                        return (
-                            <>
-                                <div className="skill">{Language}</div>
-                            </>
-                        )
-                    } )
-                }
+                <h3 style={HeadingStyleTop}>Programming Languages</h3>
+                    {
+                        ProgrammingLanguages.map( Language => {
+                            return (
+                                <>
+                                    <div className="skill">{Language}</div>
+                                </>
+                            )
+                        } )
+                    }
             </div>
 
             <div id="Frameworks">

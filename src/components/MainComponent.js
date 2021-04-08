@@ -25,12 +25,15 @@ export default function MainComponent() {
             <BrowserRouter>
             
             <div className="NavBar">
-                <Navbar bg="light" className=".ExternalLinks">
-                    <Nav.Link><NavLink to="/" exact activeClassName="activeClass" style={LinkStyle }>About</NavLink></Nav.Link>
-                    <Nav.Link><NavLink to="/experience" activeClassName="activeClass" style={ LinkStyle }>Experience</NavLink></Nav.Link>
-                    <Nav.Link><NavLink to="/skills" activeClassName="activeClass" style={LinkStyle}>Skills</NavLink></Nav.Link>
-                    <Nav.Link><NavLink to="/projects" activeClassName="activeClass" style={LinkStyle}>Projects</NavLink></Nav.Link>
-                    <Nav.Link><NavLink to="/contact" activeClassName="activeClass" style={LinkStyle}>Contact Me</NavLink></Nav.Link>
+                <Navbar bg="light" expand="lg" className=".ExternalLinks">
+                    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                    <Navbar.Collapse id="responsive-navbar-nav">
+                        <Nav.Link><NavLink to="/" exact activeClassName="activeClass" style={LinkStyle }>About</NavLink></Nav.Link>
+                        <Nav.Link><NavLink to="/experience" activeClassName="activeClass" style={ LinkStyle }>Experience</NavLink></Nav.Link>
+                        <Nav.Link><NavLink to="/skills" activeClassName="activeClass" style={LinkStyle}>Skills</NavLink></Nav.Link>
+                        <Nav.Link><NavLink to="/projects" activeClassName="activeClass" style={LinkStyle}>Projects</NavLink></Nav.Link>
+                        <Nav.Link><NavLink to="/contact" activeClassName="activeClass" style={LinkStyle}>Contact Me</NavLink></Nav.Link>
+                    </Navbar.Collapse>
                 </Navbar>
             </div>
             
