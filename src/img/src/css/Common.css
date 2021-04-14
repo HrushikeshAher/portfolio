@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&family=Varela+Round&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.CommonText h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+}
+
+.CommonText h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+}
+
+.CommonText {
+    font-family: 'Helvetica', sans-serif;
+    margin-left: 20px;
+}
+
+.CommonText ul, p{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.CommonText ul li {
+    list-style-type: none;
+}
+
+.ExternalLinks {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    font-size: 3vh;
+}
+
+.ExternalLink {
+    margin: 7px;
+}
+
+a:link {
+    text-decoration: none;
+}
+  
+a:visited {
+    text-decoration: none;
+}
+  
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+  
+a:active {
+    text-decoration: none;
+}
+
+.activeClass {
+    padding: 5px;
+    border-bottom: 2px solid #888888;
+}
+
+.NavBar {
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 6px 6px rgba(0,0,0,0.2);
+}
+
+/* mobile devices */
+@media (max-width: 768px) {
+    .CommonText {
+        display: block;
+    }
+}
