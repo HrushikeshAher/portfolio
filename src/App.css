@@ -16,7 +16,8 @@
   margin: 10px;
   border-radius: 5px;
   box-shadow: 0 6px 6px rgba(0,0,0,0.2);
-  min-height: 90vh;
+  max-height: 90vh;
+  min-width: 215px;
 }
 
 .DetailsProfile {
@@ -31,5 +32,9 @@
 @media (max-width: 768px) {
   .main {
       display: block;
+  }
+
+  .ShortProfile {
+    min-width: 40vw;;
   }
 }

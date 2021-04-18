@@ -6,11 +6,11 @@ export default function Experience() {
     const AllExperience = [
         {
             Role : "R&D Development Engineer @ Dassault Systèmes",
-            Responsibility : "Yet to come"
+            Responsibility : "Have worked as a full stack engineer with React.js as frontend tech and ruby on rails as backend tech."
         },
         {
             Role : "Software Analyst @ Yardi Software India Pvt. Ltd.",
-            Responsibility : "Worked as Full-Stack developer where I created frameworks, bug fixing, enhancements and adding new features using JavaScript frameworks namely Node.js and React.js for frontend, middleware and MS SQL Server as backend tech."
+            Responsibility : "Worked as Full-Stack developer where I created frameworks, bug fixing, enhancements and adding new features using JavaScript frameworks namely Node.js and React.js for frontend and MS SQL Server as backend tech."
         }
     ]
     
